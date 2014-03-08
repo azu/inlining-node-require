@@ -15,6 +15,38 @@ npm install inlining
 
 - [ ] Write usage instructions
 
+## Example
+
+See example/
+
+
+__add.js__
+
+```
+function add(x, y) {
+    return x + y;
+}
+module.exports = add;
+```
+
+__index.js__
+
+``` js
+var add = require("./add");
+add(1, 2);
+```
+
+Inlining above module.(entry point is `index.js`)
+
+__result.js__
+
+```js
+function add(x, y) {
+    return x + y;
+}
+add(1, 2);
+```
+
 ## Contributing
 
 1. Fork it!
