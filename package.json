@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "falafel": "~0.3.1",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "optionator": "~0.1.1"
   }
 }
