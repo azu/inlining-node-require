@@ -38,6 +38,10 @@ add(1, 2);
 
 Inlining above module.(entry point is `index.js`)
 
+``` sh
+$ inlining-node-require index.js
+```
+
 __result.js__
 
 ```js
