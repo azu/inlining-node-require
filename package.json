@@ -1,28 +1,29 @@
 {
-  "name": "inlining-node-require",
-  "description": "inlining node's `require`.",
-  "version": "0.0.1",
-  "repository": {
-    "url": "git://github.com/azu/node-require-inline.git"
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha test/*.js"
-  },
-  "author": "azu",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/azu/node-require-inline/issues"
-  },
-  "devDependencies": {
-    "power-assert": "~0.3.1",
-    "mocha": "~1.17.1",
-    "espower-loader": "~0.3.1",
-    "escodegen": "~1.2.0"
-  },
-  "dependencies": {
-    "falafel": "~0.3.1",
-    "lodash": "~2.4.1",
-    "optionator": "~0.1.1"
-  }
+    "name": "inlining-node-require",
+    "description": "inlining node's `require`.",
+    "version": "0.0.1",
+    "repository": {
+        "url": "git://github.com/azu/node-require-inline.git"
+    },
+    "bin": "bin/index.js",
+    "main": "lib/inlining.js",
+    "scripts": {
+        "test": "mocha test/*.js"
+    },
+    "author": "azu",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/azu/node-require-inline/issues"
+    },
+    "devDependencies": {
+        "power-assert": "~0.3.1",
+        "mocha": "~1.17.1",
+        "espower-loader": "~0.3.1",
+        "escodegen": "~1.2.0"
+    },
+    "dependencies": {
+        "falafel": "~0.3.1",
+        "lodash": "~2.4.1",
+        "optionator": "~0.1.1"
+    }
 }
