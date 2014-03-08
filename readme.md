@@ -13,7 +13,10 @@ npm install inlining
 
 ## Usage
 
-- [ ] Write usage instructions
+``` sh
+$ inlining-node-require -h
+$ inlining-node-require index.js
+```
 
 ## Example
 
