@@ -8,7 +8,7 @@ position closer to `concat`.
 ## Installation
 
 ```sh
-npm install inlining
+npm install inlining-node-require
 ```
 
 ## Usage
