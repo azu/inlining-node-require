@@ -32,4 +32,11 @@ describe("inlining", function () {
             assert.equal(result, ex_result);
         });
     });
+    context("with npm module fixture", function () {
+        var ex_result = fs.readFileSync(__dirname + "/fixture/npm_module/result.js", "utf-8");
+        it("should concat", function () {
+            var result = inlining(__dirname + "/fixture/npm_module/index.js");
+            assert.equal(result, ex_result);
+        });
+    });
 });
