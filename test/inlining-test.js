@@ -6,7 +6,6 @@
 var assert = require("power-assert");
 var fs = require("fs");
 var inlining = require("../lib/inlining");
-var esformatter = require('esformatter');
 
 describe("inlining", function () {
     context("with example", function () {
