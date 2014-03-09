@@ -25,4 +25,11 @@ describe("inlining", function () {
             assert.equal(result, ex_result);
         });
     });
+    context("with nest fixture", function () {
+        var ex_result = fs.readFileSync(__dirname + "/fixture/nest_module/result.js", "utf-8");
+        it("should concat", function () {
+            var result = inlining(__dirname + "/fixture/nest_module/a.js");
+            assert.equal(result, ex_result);
+        });
+    });
 });
