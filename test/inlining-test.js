@@ -38,4 +38,19 @@ describe("inlining", function () {
             assert.equal(result, ex_result);
         });
     });
+    context("with export-property", function () {
+        var ex_result = fs.readFileSync(__dirname + "/fixture/export_property/result.js", "utf-8");
+        it("should concat", function () {
+            var result = inlining(__dirname + "/fixture/export_property/a.js");
+            assert.equal(result, ex_result);
+        });
+    });
+    context("with diff-export-property", function () {
+        var ex_result = fs.readFileSync(__dirname + "/fixture/diff_export_property/result.js", "utf-8");
+        it("should concat", function () {
+            var result = inlining(__dirname + "/fixture/diff_export_property/a.js");
+            assert.equal(result, ex_result);
+        });
+    });
+
 });
