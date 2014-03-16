@@ -11,6 +11,11 @@ position closer to `concat`.
 npm install inlining-node-require
 ```
 
+### task
+
+* [azu/gulp-inlining-node-require](https://github.com/azu/gulp-inlining-node-require "azu/gulp-inlining-node-require")
+
+
 ## Usage
 
 ``` sh
