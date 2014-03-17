@@ -3,7 +3,8 @@
   "description": "inlining node's `require`.",
   "version": "0.0.5",
   "repository": {
-    "url": "git://github.com/azu/node-require-inline.git"
+    "type": "git",
+    "url": "git://github.com/azu/inlining-node-require.git"
   },
   "bin": "bin/index.js",
   "main": "lib/inlining.js",
@@ -13,17 +14,17 @@
   "author": "azu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/azu/node-require-inline/issues"
+    "url": "https://github.com/azu/inlining-node-require/issues"
   },
   "devDependencies": {
     "power-assert": "~0.3.1",
-    "mocha": "~1.17.1",
+    "mocha": "~1.18.0",
     "espower-loader": "~0.3.1",
-    "escodegen": "~1.2.0"
+    "escodegen": "~1.3.0"
   },
   "dependencies": {
     "falafel": "~0.3.1",
     "lodash": "~2.4.1",
-    "optionator": "~0.1.1"
+    "optionator": "~0.2.1"
   }
 }
