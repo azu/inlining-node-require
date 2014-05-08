@@ -52,5 +52,12 @@ describe("inlining", function () {
             assert.equal(result, ex_result);
         });
     });
+    context("with global_var", function () {
+        var ex_result = fs.readFileSync(__dirname + "/fixture/global_var/result.js", "utf-8");
+        it("should concat", function () {
+            var result = inlining(__dirname + "/fixture/global_var/a.js");
+            assert.equal(result, ex_result);
+        });
+    });
 
 });
