@@ -1,7 +1,7 @@
 {
   "name": "inlining-node-require",
   "description": "inlining node's `require`.",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "homepage": "https://github.com/azu/node-require-inline",
   "repository": {
     "type": "git",
