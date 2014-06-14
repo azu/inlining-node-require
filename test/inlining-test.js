@@ -59,5 +59,12 @@ describe("inlining", function () {
             assert.equal(result, ex_result);
         });
     });
+    context("with pure json", function () {
+        var ex_result = fs.readFileSync(__dirname + "/fixture/json/result.js", "utf-8");
+        it("should concat", function () {
+            var result = inlining(__dirname + "/fixture/json/a.js");
+            assert.equal(result, ex_result);
+        });
+    });
 
 });
