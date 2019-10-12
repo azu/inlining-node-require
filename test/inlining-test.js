@@ -66,5 +66,18 @@ describe("inlining", function () {
             assert.equal(result, ex_result);
         });
     });
-
+    context("with es2015 class", function () {
+        var ex_result = fs.readFileSync(__dirname + "/fixture/es2015_class/result.js", "utf-8");
+        it("should concat", function () {
+            var result = inlining(__dirname + "/fixture/es2015_class/a.js");
+            assert.equal(result, ex_result);
+        });
+    });
+    context("with es2015 class", function () {
+        it("should concat", function () {
+            const actual = inlining(__dirname + "/fixture/quote/input.js");
+            const output = fs.readFileSync(__dirname + "/fixture/quote/result.js", "utf-8");
+            assert.strictEqual(actual, output);
+        });
+    });
 });
